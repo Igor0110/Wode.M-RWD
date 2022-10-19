@@ -259,6 +259,10 @@
           min-height: 80px;
           min-width: 300px;
         }
+        footer .c7{
+          display: flex;
+          justify-content: center;
+        }
 
 
         /* md */
@@ -308,7 +312,7 @@
     position: absolute;
     top:50%;
     transform: translateY(-50%);
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
   }
 
