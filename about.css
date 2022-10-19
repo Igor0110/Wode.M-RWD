@@ -1,0 +1,35 @@
+.about-banner-img{
+    width: 100%;
+    height: 350px;
+}
+.about-banner-img img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+    object-position: top center;
+}
+
+
+.content{
+    align-items: center;
+    padding: 0px 32px 16px;
+    margin: 50px auto ;
+}
+.content p{
+    font-size: 3vmin;
+    padding-bottom: 15px;
+    letter-spacing: 2px
+}
+.img{
+    padding: 0px 32px 16px;
+    aspect-ratio: 4/5;
+    margin: auto;
+    object-fit: cover;
+    object-position: center center;
+
+}
+img{
+    width: 100%;
+
+}
