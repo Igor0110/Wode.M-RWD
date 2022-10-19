@@ -1,0 +1,474 @@
+h2{
+  color: brown ;
+  margin-bottom: 30px;
+  margin-top: 90px;
+  text-align: center;
+}
+
+
+
+/* home-benner共用↓ */
+.home-benner .pic img{
+  vertical-align: top;
+  width: 100%;
+  
+}
+.home-benner{
+  position: relative;
+  z-index: 0;
+  margin-top: 73px ;
+}
+.home-benner .pic{
+  width: 100%;
+  position: relative;
+  height: 100%;
+
+}
+
+.home-benner .pic>a{
+  left: 0;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 5vmin;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
+
+/* benner共用↑ */
+
+
+/* -----輪播圖---- */  
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+
+
+    .swiper {
+      width: 70%;
+      height: 70%;
+      margin-bottom: 35px;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      position: relative;
+    }
+    .swiper-slide div{
+      position: absolute;
+      width: 100%;
+      height: 30px;
+      background-color: #f1f1f1;
+      color: #642424;
+      font-size: 20px;
+      bottom: 0;
+      text-align: center;
+      opacity: 0.8;
+      font-weight: 400;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+    .selling .more-commodity{
+      width: fit-content;
+      font-size: 24px;
+      font-weight: 400;
+      background-color: #4E4E4E;
+      color: #f1f1f1;
+      padding: 5px 10px 7px;
+      border-radius: 10px;
+    }
+    .selling a{
+      margin-top: 20px;
+      text-decoration: none;
+      display: flex;
+      justify-content: end;
+      padding: 10px 20px;
+    }
+    .swiper-pagination{
+      margin: 10px;
+    }
+    .selling a div{
+      padding: 10px 20px;
+    }
+
+/* -----輪播圖---↑- */ 
+
+/* 挑選指南-活動穿搭 --潛水穿搭 */
+
+
+    .home-guide-diving-b{
+      background: linear-gradient(241.96deg, #eec6ba 27.41%, rgba(106, 163, 204, 0) 62.45%);
+    }
+    .home-guide-diving{
+      max-width: 1200px;
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 30px;
+      /* border-radius: 50% 20% / 10% 40%; */
+    }
+    .home-guide-diving h2{
+      margin: 30px 0px;
+    }
+    .home-diving-content figure{
+      position: relative;
+    }
+    figure img{
+      width: 100%;
+      border-radius: 10px;
+    }
+    .diving-main-card{
+      width: 900px;
+    }
+    .diving-main{
+      display: flex;
+      margin: 0px 15px;
+    }
+    .home-diving-content figcaption{
+      position: absolute;
+      background-color: #f1f1f1;
+      color: #642424;
+      font-size: 20px;
+      bottom: 0;
+      width: 100%;
+      height: 30px;
+      opacity: 0.8;
+      text-align: center;
+      font-weight: 400;
+      border-radius: 0px 0px 10px 10px;
+
+    }
+
+    .diving-main .text{
+      width: 400px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* text-align:justify; */
+      margin: auto;
+      font-size: 18px;
+      padding: 5px 20px;
+      line-height: 1.4;
+      
+    }
+    .diving-main .text h3{
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .diving-main .text span{
+      color: chocolate;
+      text-align: center;
+      font-size: 28px;
+      font-weight:500;
+      padding-bottom: 20px;
+    }
+    .home-guide-diving .buynow{
+      background-color:sandybrown ;
+      font-size: 20px;
+      width: fit-content;
+      text-align: right;
+      margin-right: 10%;
+      padding: 10px 30px 10px 30px;
+      color: #f1f1f1;
+      border-radius: 10px;
+      
+
+    }
+    .home-guide-diving .text a{
+      text-decoration: none;
+    }
+    
+    .diving-outfit-card-group{
+      display: flex;
+      gap: 20px;
+      padding: 20px 0px;
+      margin: 0px 15px;
+      justify-content: space-between;
+      
+    } 
+    .diving-outfit-card img{
+      width: 370px;
+      height: 300px;
+      border-radius: 10px;
+      vertical-align: middle;
+    }
+
+
+/* --------------挑選指南-活動穿搭----潛水穿搭-----↑--- */
+
+/* ---------------------連身熱賣款↓----------------- */
+
+.home-onepeice h2{
+  align-self: center;
+
+}
+.home-onepeice{
+  min-width: 1200px;
+}
+
+.scroll{
+	height: 550px;
+  width: 1200px;
+  margin: auto;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-image: url(./pic/scroll4.jpg);
+	vertical-align: baseline;
+	background-position: center center;
+	background-size: 100% ;
+	position: relative;
+  box-shadow: 10px 10px 40px rgb(56, 50, 50) inset;
+  border-radius: 10px;
+
+}
+.scroll p{
+	text-align: center;
+	top: 4%;
+	left: 10%;
+	color: #fff;
+	font-size: 19px;
+	position: absolute;
+	transform: translateX(-20%);
+}
+
+
+.home-onepieice-img-group .main-img{
+  width: 350px;
+  height: 500px;
+}
+.home-onepieice-img-group .main-img img{
+  width: 100%;
+  height: 100%;
+  background-color: antiquewhite;
+  border-radius: 10px;
+ 
+}
+.home-onepieice-img-group{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 60px 0px;
+}
+.home-onepeice .img-group{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  
+}
+.home-onepeice .img-group img {
+  object-fit: cover;
+  width: 160px;
+  height: 160px;
+  object-position:center center;
+  border-radius: 10px;
+}
+.home-onepieice-img-group figcaption{
+  color: #642424;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 20px 0px;
+  width: fit-content;
+  
+}
+.img-group p{
+  font-size: 20px;
+  background-color: sandybrown;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+}
+.img-group div a{
+  text-decoration: none;
+}
+
+/* ---------------------連身熱賣款↑------------------- */
+
+/* ----------------挑選指南-大胸女孩友善款----- */
+
+.home-guide-XLrecommend{
+  width: 100%;
+  background: linear-gradient(241.96deg, rgba(217, 158, 86, 0.44) 27.41%, rgba(198, 159, 106, 0.07) 62.45%);
+  /* border-radius: 50% 20% / 10% 40%; */
+  padding-bottom: 70px;
+}
+
+.home-guide-XLrecommend h2{
+  padding: 20px 0px;
+}
+.parrot{
+  margin: auto;
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.parrot .img{
+  width: 400px;
+  height: 600px;
+  position: relative;
+}
+.parrot .img div{
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background-color: #f1f1f1;
+  color: #642424;
+  font-size: 20px;
+  bottom: 0;
+  text-align: center;
+  opacity: 0.8;
+  font-weight: 400;
+  border-radius: 0px 0px 10px 10px;
+}
+.parrot .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center ;
+  border-radius: 10px;
+}
+.parrot-content{
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  line-height: 1.5;
+  
+}
+
+.parrot-content .list{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+.parrot-content .list p{
+  margin-left: 30px;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: left;
+  
+}
+.parrot-content .img{
+ height: 350px;
+ width: 250px;
+ border-radius: 10px;
+ position: relative;
+
+}
+.parrot-content .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+
+
+}
+.parrot-introduction{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 28px ;
+}
+.parrot-introduction .list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.parrot-content .parrot-introduction .size{
+  line-height: 1.4;
+  color: #642424;
+}
+.parrot-content .parrot-introduction .buynow{
+  background-color:sandybrown ;
+  font-size: 20px;
+  width: fit-content;
+  padding: 10px 30px 10px 30px;
+  color: #f1f1f1;
+  border-radius: 10px;
+}
+.parrot-content .parrot-introduction div a{
+  text-decoration: none;
+
+}
+.parrot-content .parrot-introduction .buynowicon{
+  display: flex;
+  justify-content: end;
+}
+.parrot-ootd {
+  display: flex;
+  gap: 5px;
+}
+.parrot-ootd .img{
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+}
+.parrot-ootd .img div{
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background-color: #f1f1f1;
+  color: #642424;
+  font-size: 12px;
+  bottom: 0;
+  text-align: center;
+  opacity: 0.8;
+  font-weight: 400;
+}
+.parrot-ootd .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+
