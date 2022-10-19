@@ -9,27 +9,55 @@
     object-fit: cover;
     object-position: top center;
 }
-
+.about .test{
+    margin: 20px auto;
+    
+}
 
 .content{
     align-items: center;
     padding: 0px 32px 16px;
     margin: 50px auto ;
+    width: 500px;
+
 }
-.content p{
+.about p{
     font-size: 3vmin;
-    padding-bottom: 15px;
+    padding: 15px ;
     letter-spacing: 2px
+}
+
+.item{
+    width: 100%;
+}
+.item2{
+    flex-direction: row-reverse;
 }
 .img{
     padding: 0px 32px 16px;
     aspect-ratio: 4/5;
     margin: auto;
-    object-fit: cover;
-    object-position: center center;
+    min-width: 150px;
+    min-height: 200px;
 
 }
 img{
     width: 100%;
 
+}
+@media screen and (min-width: 768px) {
+    .item{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+    .img{
+        aspect-ratio: 4/5;
+        margin: auto;
+    
+    
+    }
+    .content{
+        width: 600px;
+    }
 }
