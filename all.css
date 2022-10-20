@@ -63,6 +63,8 @@
     transition: 2s ease-in-out;
   }
 
+  /* ===== */
+  
   /* 首頁-選單共用 */
   .header{
     display: flex;
@@ -81,6 +83,7 @@
   width: 175px;
   height: 73px;
   padding: 5px;
+  margin-left: 20px;
 }
 
 .logo img{
@@ -89,7 +92,6 @@
   display: inline;
   
 }
-
 
 
   .main-nav{
@@ -133,18 +135,18 @@
                 .hb{
                     width: 40px;
                     height: 40px;
-                    background-color: rgb(162, 118, 118);
                     display: flex;
                     flex-direction: column;
                     justify-content: space-evenly;
                     align-items: center;
                     position: relative;
                     border-radius: 50%;
+
                 }
                 .hb span{
                     width: 32px;
                     height: 2px;
-                    background-color: #000;
+                    background-color: #f1f1f1;
                     position: absolute;
                     left: 0;
                     right: 0;
@@ -155,29 +157,29 @@
                 }
                 .hb span:nth-child(1){
                     top: 7px;
-                    transition: transform 1s 0s ,top 1s 1s;
+                    transition: transform .7s 0s ,top 1s 1s;
                 }
                 .hb span:nth-child(2){
                     top: 0;
                     bottom: 0;
-                    transition: opacity 1s 2s;
+                    transition: opacity .7s 2s;
                     
                 }
                 .hb span:nth-child(3){
                     top: 31px;
-                    transition: transform 1s 0s ,top 1s 1s;
+                    transition: transform .7s 0s ,top 1s 1s;
                 }
     
                 #menu-switch:checked + .header .main-nav{
                     /* display: block; */
                     left: 0;
                     opacity: 1;
-                    transition: opacity 1s;
+                    transition: opacity .7s;
                 }
                 #menu-switch:checked + .header .hb span:nth-child(2){
                     /* display: none; */
                     opacity: 0;
-                    transition: opacity 1s ;
+                    transition: opacity .7s ;
     
     
                         
@@ -185,14 +187,14 @@
                 #menu-switch:checked + .header .hb span:nth-child(1){
                     top: 19px;
                     transform: rotate(45deg);
-                    transition: top 1s 0s ,transform 1s 1s;
+                    transition: top .7s 0s ,transform 1s 1s;
                     
                 }
     
                 #menu-switch:checked + .header .hb span:nth-child(3){
                     top: 19px;
                     transform: rotate(-45deg);
-                    transition: top 1s 0s ,transform 1s 1s;
+                    transition: top .7s 0s ,transform 1s 1s;
                 }
     
             }

@@ -23,7 +23,7 @@
 
 
     <script src="https://kit.fontawesome.com/aef7372e6a.js" crossorigin="anonymous"></script>
-
+    <script src="./JavaScript.js"></script>
 </head>
 <body>
     <input type="checkbox" name="" id="menu-switch">
@@ -33,7 +33,6 @@
             <div class="logoiton">
                 <a  href="index.html">
                     <img src="./pic/wode3.png" alt="Wode.M">
-
                 </a>
 
             </div>
@@ -86,8 +85,10 @@
                             <h3>
                                 創立初衷
                             </h3>
-                            <p>Wode.M 由一位熱愛自由潛水運動的台灣女孩自創，專為水上運動族群設計最適合的泳裝和配件。</p>
+                            <p>Wode.M 由一位熱愛自由潛水運動的台灣女孩自創，專為水上運動族群設計最適合的泳裝和配件。
+                            </p>
                             <p>為了讓水類服飾在台灣的選擇更豐富，促使其設計質感提升，於是決定自創品牌、自行設計、研發和參與所有選料的製作過程，這一切都是熱愛大海的初心。</p>
+
                         </div>
                         <div class="img ">
                             <img src="./pic/about/about6.jpg" alt="關於初衷">
@@ -99,9 +100,8 @@
                             <h3>
                                 專業裁縫
                             </h3>
-                            <p>指定台灣在地具有多年經驗的專業裁縫師傅手工製作</p>
-                            <p>車縫平整、版型舒適、質感不凡無可取代的首座溫度，</p>
-                            <p>拒絕快時尚的氾濫與浪費。</p>
+                            <p>指定台灣在地具有多年經驗的專業裁縫師傅手工製作，
+                                車縫平整、版型舒適、質感不凡無可取代的首座溫度，拒絕快時尚的氾濫與浪費。</p>
                         </div>
                         <div class="img">
                             <img src="./pic/about/about4.jpg" alt="專業裁縫">
@@ -214,21 +214,7 @@
     </footer>   
 
 
-    <script>
-        let oth = $(window).innerHeight();
-        $(window).scroll(function(){
-            let sct = $(this).scrollTop();
-            let all = sct+oth;
-            $(".slideIn").each(function(){
-                let sld = $(this).offset().top;
-                if(all >sld){
-                    $(this).addClass("active");
-                }else{
-                    $(this).removeClass("active");
-                }
-            });
-        });
-    </script>
+
 </body>
 </html>
  
