@@ -1,4 +1,4 @@
-  *{
+:root{
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 14px;
     color: #4e4e4e;
@@ -11,7 +11,7 @@
     font-weight: 600;
     text-align: center;
     line-height: 1.3;
-    margin: 0px 20px;
+    margin: 40px 20px;
     
   }
   h2 > span{
@@ -26,25 +26,41 @@
     font-weight: 600;
     text-align: center;
     line-height: 1.3;
-    margin: 0px 20px;
+    margin: 20px 0px;
   }
   h4{
     font-size: 28px;
     font-weight: 600;
     text-align: center;
     line-height: 1.3;
-    margin: 0px 15px;
+    margin: 15px 0px;
   }
   h5{
     font-size: 25px;
     font-weight: 600px;
     text-align: center;
     line-height: 1.3;
-    margin: 0px 10px;
+    margin: 10px 0px;
   }
   p{
     line-height: 1.3;
     
+  }
+
+
+
+  /* =======淡入 */
+  .slideIn{
+    opacity: 0;
+    filter: blur(5px);
+    transform:translateY(-50px) ;
+
+  }
+  .active{
+    opacity: 1;
+    filter: blur(0px);
+    transform:translateY(0px) ;
+    transition: 2s ease-in-out;
   }
 
   /* 首頁-選單共用 */
@@ -59,19 +75,20 @@
     /* margin-bottom: 20px; */
     z-index: 20;
     font-size: 16px;
+  }
+
+.logo .logoiton {
+  width: 175px;
+  height: 73px;
+  padding: 5px;
 }
 
-  .logo .logoiton {
-    width: 175px;
-    height: 73px;
-    padding: 5px;
-  }
 .logo img{
-    vertical-align: top;
-    width: 100%;
-    display: inline;
-    
-  }
+  vertical-align: top;
+  width: 100%;
+  display: inline;
+  
+}
 
 
 

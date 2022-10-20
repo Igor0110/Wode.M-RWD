@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wode.M about</title>
+    <script src="./js/jquery-3.6.1.js"></script>
     <link rel="stylesheet" href="./css_reset.css">  
 
     <link rel="icon" href="./pic/favicon.ico" type="image/x-icon" />
     <!-- 網頁標題欄title加入icon圖標 -->
     <link rel="shortcut icon" href="./pic/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./all.css">  
+    <link rel="stylesheet" href="./all.css"> 
+
     <link rel="stylesheet" href="./grid.css">
 
     <link rel="stylesheet" href="./about.css">
@@ -21,6 +23,7 @@
 
 
     <script src="https://kit.fontawesome.com/aef7372e6a.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <input type="checkbox" name="" id="menu-switch">
@@ -69,7 +72,7 @@
     <div class="about">
         <div class="container">
             <div class="row">
-                <div class="test">
+                <div class="test slideIn">
                     <h2>關於Wode.M</h2>
                     <div>
                         <p>歡迎來到 Wode.M</p>
@@ -78,7 +81,7 @@
                 </div>
 
                 <div class="wrapper ">
-                    <div class="item">
+                    <div class="item slideIn">
                         <div class="content">
                             <h3>
                                 創立初衷
@@ -91,7 +94,7 @@
                         </div>
                     </div>
     
-                    <div class="item item2 ">
+                    <div class="item item2  slideIn">
                         <div class="content">
                             <h3>
                                 專業裁縫
@@ -105,7 +108,7 @@
                         </div>
                     </div>
     
-                    <div class="item">
+                    <div class="item slideIn">
                         <div class="content">
                             <h3>
                                 水陸兩穿
@@ -209,5 +212,23 @@
             </div>
         </div>
     </footer>   
+
+
+    <script>
+        let oth = $(window).innerHeight();
+        $(window).scroll(function(){
+            let sct = $(this).scrollTop();
+            let all = sct+oth;
+            $(".slideIn").each(function(){
+                let sld = $(this).offset().top;
+                if(all >sld){
+                    $(this).addClass("active");
+                }else{
+                    $(this).removeClass("active");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
+ 

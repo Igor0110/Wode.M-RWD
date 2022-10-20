@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css_reset.css"> 
+    
+    <link rel="icon" href="./pic/favicon.ico" type="image/x-icon" />
+    <!-- 網頁標題欄title加入icon圖標 -->
+    <link rel="shortcut icon" href="./pic/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./all.css">
+    <link rel="stylesheet" href="./grid.css">
+
+    <link rel="stylesheet" href="./product.css">
+    <!-- 字形設定 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+    <title>Wode.M 選購泳衣</title>
+    <script src="https://kit.fontawesome.com/aef7372e6a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <input type="checkbox" name="" id="menu-switch">
+    <div class="header">
+        <!-- logo -->
+        <h1 class="logo">
+            <div class="logoiton">
+                <a  href="index.html">
+                    <img src="./pic/wode3.png" alt="Wode.M">
+
+                </a>
+
+            </div>
+            
+        </h1>
+
+        <!-- 漢堡 -->
+        <label for="menu-switch" class="hb">  
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+      
+        <!-- 選單 -->
+        <nav class="main-nav">
+            <a href="./product.html">選購泳衣</a>
+            <a href="map.html">地圖探索</a>
+            <a href="guide.html">挑選指南</a>
+            <a href="about.html">關於我們</a>
+            <a href="#">
+                <img src="./pic/icon/shopping2.png" alt="購物車">
+                
+            </a>
+            <a href="#">
+                <img src="./pic/icon/preson5.png" alt="會員">
+                
+            </a>
+        </nav>
+    </div>
+    <!-- ==== -->
+    <div class="product-banner-img">
+        <img src="./pic/product/benner3.jpg" alt="product-bannerr">
+
+    </div>
+    
+    <h2>選購泳衣</h2>
+    <div class="wrapper-grid-main">
+        <!-- 篩選 -->
+        <div class="filter">
+            <div class="category">
+                    <a class="newarrivals"><h3>最新上市</h3></a>
+                <a class="selling"><h3>本季熱賣款</h3></a>
+            </div>
+            <div class="category">
+                <h3>款式挑選</h3>
+                <div>
+                    <input type="text" class="category-search" placeholder="搜尋">
+                </div>
+                <div class="filter-body">
+                    <div class="filter-item">
+                        <label for="">
+                            <input type="checkbox">
+                            <span>連身款</span>
+                        </label>
+                    </div>
+                    <div class="filter-item">
+                        <label for="">
+                            <input type="checkbox">
+                            <span>上衣</span>
+                        </label>
+                    </div>
+                    <div class="filter-item">
+                        <label for="">
+                            <input type="checkbox">
+                            <span>下褲</span>
+                        </label>
+                    </div>
+                    <div class="filter-item">
+                        <label for="">
+                            <input type="checkbox">
+                            <span>LEOPARD款</span>
+                        </label>
+                    </div>
+                    <div class="filter-item">
+                        <label for="">
+                            <input type="checkbox">
+                            <span>Orca 歐卡款</span>
+                        </label>
+                    </div>
+                    <div class="filter-item">
+                        <label for="">
+                            <input type="checkbox">
+                            <span>Platax款</span>
+                        </label>
+                    </div>
+                    <div class="filter-item">
+                        <label for="">
+                            <input type="checkbox">
+                            <span>Flamingo款</span>
+                        </label>
+                    </div>
+                    <div class="filter-item">
+                        <label for="">
+                            <input type="checkbox">
+                            <span>Parrot款</span>
+                        </label>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="category"> <!--依尺寸挑選  -->
+                <h3>依尺寸挑選</h3>
+                <div class="filter_body item-grid">
+                    <div class="filter_item size" id="checkbox1">
+                        <span>XS</span>
+                    </div>
+                    <div class="filter_item size" id="checkbox2">
+                        <span>S</span>
+                    </div>
+                    <div class="filter_item size" id="checkbox3">
+                        <span>M</span>
+                    </div>
+                    <div class="filter_item size" id="checkbox4">
+                        <span>L</span>
+                    </div>
+                    <div class="filter_item size" id="checkbox5">
+                        <span>XL</span>
+                    </div>
+                    <div class="filter_item size" id="checkbox6">
+                        <span>XXL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">  <!--價格挑選  -->
+                <h3 class="category-title">
+                    價格挑選                
+                </h3>
+                <div class="track-container">
+                    <label for="range">區間
+                        <input type="range" class="range" min="$1380" max="3880" step="200" value="2280">
+                        <p>
+                            <span class="range-value min">$1,380</span>
+                            <span class="range-value max">$3,380</span>
+                        </p>
+                        
+                    </label>
+                    
+
+                </div>
+
+            </div>
+
+            
+        </div>
+        <!-- 商品內容 容器 -->
+        <div class="container">
+            <div class="row">
+                <div class="buttons">
+                    <div class="custom-select">
+                        <select name="select" id="select" form="">
+                            <option value="">依種類篩選</option>
+                            <option value="">最新上市</option>
+                            <option value="2">最熱賣款</option>
+                            <option value="0">價格:從低到高</option>
+                            <option value="1">價格:從低到高</option>
+                            <option value="0">上架時間:從新到舊</option>
+                            <option value="1">上架時間:從舊到新</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="wrapper-grid-main-items">
+                    <div class="product-cards">
+                        <div class="card">
+                            <a href="#" class="product-card">
+                                <figure class="productimg">
+                                    <img src="./pic/product/product3-0.jpg" alt="">
+                                    <figcaption>
+                                        雙 V 交叉 撞色美胸上衣
+                                    </figcaption>
+                                </figure>
+                                <p class="color">
+                                    &#9670 Olive 橄欖綠 
+                                </p>
+                                <p>
+                                    Olive系列
+                                </p>
+                                <p class="price">NT$1,880</p>
+                            </a>
+                        </div>
+
+
+                        <a href="#" class="product-card">
+                            <figure class="productimg">
+                                <img src="./pic/product/product4-1.jpg" alt="">
+                                <figcaption>
+                                    美臀勾勾褲
+                                </figcaption>
+                            </figure>
+                            <p class="color">
+                                &#9670  black 石墨黑
+                            </p>
+                            <p>
+                                Ribbed Fabric「 高磅系列 」
+                            </p>
+                            <p class="price">NT$1,380</p>
+                        </a>
+    
+                        <a href="#" class="product-card">
+                            <figure class="productimg">
+                                <img src="./pic/product/product2-0.jpg" alt="Graphite black 石墨黑 美臀勾勾褲">
+                                <figcaption>
+                                    美臀勾勾褲
+                                </figcaption>
+                            </figure>
+                            <p class="color">
+                                &#9670 black 石墨黑
+                            </p>
+                            <p>
+                                Ribbed Fabric 高磅系列
+                            </p>
+                            <p class="price">NT$1,380</p>
+                        </a>
+                        <a href="#" class="product-card">
+                            <figure class="productimg">
+                                <img src="./pic/product/product3-0.jpg" alt="">
+                                <figcaption>
+                                    雙 V 交叉 撞色美胸上衣
+                                </figcaption>
+                            </figure>
+                            <p class="color">
+                                &#9670 Olive 橄欖綠 
+                            </p>
+                            <p>
+                                Olive系列
+                            </p>
+                            <p class="price">NT$1,880</p>
+                        </a>
+                        <a href="#" class="product-card">
+                            <figure class="productimg">
+                                <img src="./pic/product/product4-1.jpg" alt="">
+                                <figcaption>
+                                    美臀勾勾褲
+                                </figcaption>
+                            </figure>
+                            <p class="color">
+                                &#9670  black 石墨黑
+                            </p>
+                            <p>
+                                Ribbed Fabric「 高磅系列 」
+                            </p>
+                            <p class="price">NT$1,380</p>
+                        </a>
+    
+                        <a href="#" class="product-card">
+                            <figure class="productimg">
+                                <img src="./pic/product/product2-0.jpg" alt="Graphite black 石墨黑 美臀勾勾褲">
+                                <figcaption>
+                                    美臀勾勾褲
+                                </figcaption>
+                            </figure>
+                            <p class="color">
+                                &#9670 black 石墨黑
+                            </p>
+                            <p>
+                                Ribbed Fabric 高磅系列
+                            </p>
+                            <p class="price">NT$1,380</p>
+                        </a>
+                        <a href="#" class="product-card">
+                            <figure class="productimg">
+                                <img src="./pic/product/product3-0.jpg" alt="">
+                                <figcaption>
+                                    雙 V 交叉 撞色美胸上衣
+                                </figcaption>
+                            </figure>
+                            <p class="color">
+                                &#9670 Olive 橄欖綠 
+                            </p>
+                            <p>
+                                Olive系列
+                            </p>
+                            <p class="price">NT$1,880</p>
+                        </a>
+                        <a href="#" class="product-card">
+                            <figure class="productimg">
+                                <img src="./pic/product/product4-1.jpg" alt="">
+                                <figcaption>
+                                    美臀勾勾褲
+                                </figcaption>
+                            </figure>
+                            <p class="color">
+                                &#9670  black 石墨黑
+                            </p>
+                            <p>
+                                Ribbed Fabric「 高磅系列 」
+                            </p>
+                            <p class="price">NT$1,380</p>
+                        </a>
+                        
+                    </div>
+                </div>
+    
+                <div class="buttons"></div>
+                <div class="wrapper-grid-main-items"></div>
+                <div class="loadmore">
+                    <a href="#">
+                        <span>查看更多</span>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+     <!-- =====footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row row-cols-1">
+                <div class="col c1 introduce">Wode.M 台灣設計研發專屬女孩的水上運動服飾</div>
+                <div class="col c2 about">
+                    <ul>
+                        <li>關於我們</li>
+                        <li>會員中心</li>   
+                        <li>購物車</li>
+                        <li>重要公告</li>
+                        <li>隱私權政策</li>
+                    </ul>
+                </div>
+                <div class="col c3 guide">
+                    <div>穿搭指南</div>
+                    <ul>
+                        <li>潛水穿搭</li>
+                        <li>游泳穿搭</li>
+                        <li>衝浪穿搭</li>
+                    </ul>
+                </div>
+    
+                <div class="col c4 guide">
+                    <div>穿搭體驗分享</div>
+                    <ul>
+                        <li>買家秀TOP1</li>
+                        <li>買家秀TOP2</li>
+                        <li>買家秀TOP3</li>
+                    </ul>
+                </div>
+                <div class="col c5 guide">
+                    <div>身型挑選</div>
+                    <ul>
+                        <li>蘋果身型</li>
+                        <li>梨形身型</li>
+                        <li>倒三角身型</li>
+                    </ul>
+                </div>
+                <div class="col c6">
+                    <div>常見問題</div>
+                    <ul class="question">
+                        <li>挑選指南</li>
+                        <li>如何訂購</li>
+                        <li>追蹤訂單</li>
+                        <li>物流資訊</li>
+                        <li>退貨退款</li>
+                    </ul>
+                </div>
+                <div class="col c7">
+                    <div class="middle">
+                        <a class="btn" href="">
+                            <i class="fa fa-facebook-f"></i>
+                        </a>
+                        <a class="btn" href="">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a class="btn" href="">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a class="btn" href="">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col c8">
+                    <p>本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。</p>
+                    <p>若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。 COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.</p>
+                    <p>參考資料https://www.timu-aqua.com/</p>
+                </div>
+    
+            </div>
+        </div>
+    </footer>  
+
+</body>
+</html>
