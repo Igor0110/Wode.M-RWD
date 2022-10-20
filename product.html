@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css_reset.css"> 
+    <link rel="stylesheet" href="./css_reset.css">
+    <script src="./js/jquery-3.6.1.js"></script> 
     
     <link rel="icon" href="./pic/favicon.ico" type="image/x-icon" />
     <!-- 網頁標題欄title加入icon圖標 -->
@@ -30,8 +31,7 @@
         <h1 class="logo">
             <div class="logoiton">
                 <a  href="index.html">
-                    <img src="./pic/wode3.png" alt="Wode.M">
-
+                    <img src="./pic/wode.png" alt="Wode.M">
                 </a>
 
             </div>
@@ -63,6 +63,7 @@
     </div>
     <!-- ==== -->
     <div class="product-banner-img">
+
         <img src="./pic/product/benner3.jpg" alt="product-bannerr">
 
     </div>
@@ -179,9 +180,13 @@
             
         </div>
         <!-- 商品內容 容器 -->
-        <div class="container">
-            <div class="row">
+        <div class="content">
+            <!-- <div class="row"> -->
                 <div class="buttons">
+
+                    <div class="btn-select">
+                        <button type="button" >More</button>
+                    </div>
                     <div class="custom-select">
                         <select name="select" id="select" form="">
                             <option value="">依種類篩選</option>
@@ -198,12 +203,12 @@
                     <div class="product-cards">
                         <div class="card">
                             <a href="#" class="product-card">
-                                <figure class="productimg">
+                                <div class="productimg">
                                     <img src="./pic/product/product3-0.jpg" alt="">
-                                    <figcaption>
-                                        雙 V 交叉 撞色美胸上衣
-                                    </figcaption>
-                                </figure>
+                                </div>
+                                <h4>
+                                    雙 V 交叉美胸上衣
+                                </h4>
                                 <p class="color">
                                     &#9670 Olive 橄欖綠 
                                 </p>
@@ -214,114 +219,127 @@
                             </a>
                         </div>
 
+                        <div class="card">
+                            <a href="#" class="product-card">
+                                <div class="productimg">
+                                    <img src="./pic/product/product4-0.jpg" alt="">
+                                </div>
+                                <h4>
+                                    美臀勾勾褲
+                                </h4>
+                                <p class="color">
+                                    &#9670  black 石墨黑 
+                                </p>
+                                <p>
+                                    Ribbed Fabric高磅系列 
+                                </p>
+                                <p class="price">NT$1,380</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="#" class="product-card">
+                                <div class="productimg">
+                                    <img src="./pic/product/product2-0.jpg" alt="Graphite black 石墨黑 美臀勾勾褲">
+                                </div>
+                                <h4>
+                                    美臀勾勾褲
+                                </h4>
+                                <p class="color">
+                                    &#9670  black 石墨黑 
+                                </p>
+                                <p>
+                                    Ribbed Fabric高磅系列 
+                                </p>
+                                <p class="price">NT$1,380</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="#" class="product-card">
+                                <div class="productimg">
+                                    <img src="./pic/product/product4-1.jpg" alt="Graphite black 石墨黑 美臀勾勾褲">
+                                </div>
+                                <h4>
+                                    美臀勾勾褲
+                                </h4>
+                                <p class="color">
+                                    &#9670  black 石墨黑 
+                                </p>
+                                <p>
+                                    Ribbed Fabric高磅系列 
+                                </p>
+                                <p class="price">NT$1,380</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="#" class="product-card">
+                                <div class="productimg">
+                                    <img src="./pic/product/product3-0.jpg" alt="">
+                                </div>
+                                <h4>
+                                    雙 V 交叉美胸上衣
+                                </h4>
+                                <p class="color">
+                                    &#9670 Olive 橄欖綠 
+                                </p>
+                                <p>
+                                    Olive系列
+                                </p>
+                                <p class="price">NT$1,880</p>
+                            </a>
+                        </div>
 
-                        <a href="#" class="product-card">
-                            <figure class="productimg">
-                                <img src="./pic/product/product4-0.jpg" alt="">
-                                <figcaption>
+                        <div class="card">
+                            <a href="#" class="product-card">
+                                <div class="productimg">
+                                    <img src="./pic/product/product4-0.jpg" alt="">
+                                </div>
+                                <h4>
                                     美臀勾勾褲
-                                </figcaption>
-                            </figure>
-                            <p class="color">
-                                &#9670  black 石墨黑
-                            </p>
-                            <p>
-                                Ribbed Fabric「 高磅系列 」
-                            </p>
-                            <p class="price">NT$1,380</p>
-                        </a>
-    
-                        <a href="#" class="product-card">
-                            <figure class="productimg">
-                                <img src="./pic/product/product2-0.jpg" alt="Graphite black 石墨黑 美臀勾勾褲">
-                                <figcaption>
+                                </h4>
+                                <p class="color">
+                                    &#9670  black 石墨黑 
+                                </p>
+                                <p>
+                                    Ribbed Fabric高磅系列 
+                                </p>
+                                <p class="price">NT$1,380</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="#" class="product-card">
+                                <div class="productimg">
+                                    <img src="./pic/product/product2-0.jpg" alt="Graphite black 石墨黑 美臀勾勾褲">
+                                </div>
+                                <h4>
                                     美臀勾勾褲
-                                </figcaption>
-                            </figure>
-                            <p class="color">
-                                &#9670 black 石墨黑
-                            </p>
-                            <p>
-                                Ribbed Fabric 高磅系列
-                            </p>
-                            <p class="price">NT$1,380</p>
-                        </a>
-                        <a href="#" class="product-card">
-                            <figure class="productimg">
-                                <img src="./pic/product/product3-0.jpg" alt="">
-                                <figcaption>
-                                    雙 V 交叉 撞色美胸上衣
-                                </figcaption>
-                            </figure>
-                            <p class="color">
-                                &#9670 Olive 橄欖綠 
-                            </p>
-                            <p>
-                                Olive系列
-                            </p>
-                            <p class="price">NT$1,880</p>
-                        </a>
-                        <a href="#" class="product-card">
-                            <figure class="productimg">
-                                <img src="./pic/product/product4-1.jpg" alt="">
-                                <figcaption>
+                                </h4>
+                                <p class="color">
+                                    &#9670  black 石墨黑 
+                                </p>
+                                <p>
+                                    Ribbed Fabric高磅系列 
+                                </p>
+                                <p class="price">NT$1,380</p>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="#" class="product-card">
+                                <div class="productimg">
+                                    <img src="./pic/product/product4-1.jpg" alt="Graphite black 石墨黑 美臀勾勾褲">
+                                </div>
+                                <h4>
                                     美臀勾勾褲
-                                </figcaption>
-                            </figure>
-                            <p class="color">
-                                &#9670  black 石墨黑
-                            </p>
-                            <p>
-                                Ribbed Fabric「 高磅系列 」
-                            </p>
-                            <p class="price">NT$1,380</p>
-                        </a>
-    
-                        <a href="#" class="product-card">
-                            <figure class="productimg">
-                                <img src="./pic/product/product2-0.jpg" alt="Graphite black 石墨黑 美臀勾勾褲">
-                                <figcaption>
-                                    美臀勾勾褲
-                                </figcaption>
-                            </figure>
-                            <p class="color">
-                                &#9670 black 石墨黑
-                            </p>
-                            <p>
-                                Ribbed Fabric 高磅系列
-                            </p>
-                            <p class="price">NT$1,380</p>
-                        </a>
-                        <a href="#" class="product-card">
-                            <figure class="productimg">
-                                <img src="./pic/product/product3-0.jpg" alt="">
-                                <figcaption>
-                                    雙 V 交叉 撞色美胸上衣
-                                </figcaption>
-                            </figure>
-                            <p class="color">
-                                &#9670 Olive 橄欖綠 
-                            </p>
-                            <p>
-                                Olive系列
-                            </p>
-                            <p class="price">NT$1,880</p>
-                        </a>
-                        <a href="#" class="product-card">
-                            <figure class="productimg">
-                                <img src="./pic/product/product4-1.jpg" alt="">
-                                <figcaption>
-                                    美臀勾勾褲
-                                </figcaption>
-                            </figure>
-                            <p class="color">
-                                &#9670  black 石墨黑
-                            </p>
-                            <p>
-                                Ribbed Fabric「 高磅系列 」
-                            </p>
-                            <p class="price">NT$1,380</p>
-                        </a>
+                                </h4>
+                                <p class="color">
+                                    &#9670  black 石墨黑 
+                                </p>
+                                <p>
+                                    Ribbed Fabric高磅系列 
+                                </p>
+                                <p class="price">NT$1,380</p>
+                            </a>
+                        </div>    
+
                         
                     </div>
                 </div>
@@ -333,7 +351,7 @@
                         <span>查看更多</span>
                     </a>
                 </div>
-            </div>
+            <!-- </div> -->
             
         </div>
     </div>
@@ -412,6 +430,60 @@
             </div>
         </div>
     </footer>  
+    <script >
+        // hover設定
+        // $(function(){
+            
+        //     // $('img').attr("src","./HYPECOP。_files/29.jpg")
+        //     $(".productimg img").hover(function(){
+        //         $(this).attr("src", function(index, attr){
+        //             return attr.replace(".png", "./pic/product/product4-1.jpg");
+        //         });
+        //         }, function(){
+        //             $(this).attr("src", function(index, attr){
+        //                 return attr.replace("-active.png", "./pic/product/product4-0.jpg");
+        //             });
+        //     });
+        // })
+
+
+        // $(function(){
+        //     let clicked = false;
+        //     // let btnSelect = $(".btn-select")
+        //     if ($('.btn-select').click(function(){
+        //         clicked =true;
+
+        //     })else{
+
+        //     })
+        // })
+
+        // var hasBeenClicked = false;
+        // jQuery('#id').click(function () {
+        // hasBeenClicked = true;
+        // });
+
+        // if (hasBeenClicked) {
+        // // The link has been clicked.
+        // } else {
+        // // The link has not been clicked.
+        // }
+
+        // $("button.btn-filter").on("click", function(){
+        //     $("div.filter").toggleClass("-on");
+        //     $("div.wrapper-grid-main").toggleClass("-on");
+        //     $("div.wrapper-grid-main-items").toggleClass("-on");
+        //     $("button.btn-filter").toggleClass("-on");
+        //     $("div.select-selected").toggleClass("-on");
+        //     $("div.buttons").toggleClass("-on");
+        //     $("div.loadmore").toggleClass("-on");
+        //     $("div.btn-filter").toggleClass("-on");
+        // });
+
+        // $("div.size").on("click", function(){
+        //     $(this).toggleClass("-on");
+        // });
+    </script>
 
 </body>
 </html>
