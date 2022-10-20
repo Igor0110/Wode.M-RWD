@@ -1,0 +1,22 @@
+.share-pic{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    margin: auto 0;
+}
+.share-pic img{
+    width: 100%;
+    height: 100%;
+
+}
+.share-content{
+    margin: auto 0;
+}
+
+.bmi{
+
+}
+.card-group{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    
+}
