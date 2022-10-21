@@ -185,7 +185,9 @@
                 <div class="buttons">
 
                     <div class="btn-select">
-                        <button type="button" >More</button>
+                        <button type="button">
+                            <img src="./pic/product/filter2.png" alt="">
+                        </button>
                     </div>
                     <div class="custom-select">
                         <select name="select" id="select" form="">
@@ -370,31 +372,7 @@
                         <li>隱私權政策</li>
                     </ul>
                 </div>
-                <div class="col c3 guide">
-                    <div>穿搭指南</div>
-                    <ul>
-                        <li>潛水穿搭</li>
-                        <li>游泳穿搭</li>
-                        <li>衝浪穿搭</li>
-                    </ul>
-                </div>
-    
-                <div class="col c4 guide">
-                    <div>穿搭體驗分享</div>
-                    <ul>
-                        <li>買家秀TOP1</li>
-                        <li>買家秀TOP2</li>
-                        <li>買家秀TOP3</li>
-                    </ul>
-                </div>
-                <div class="col c5 guide">
-                    <div>身型挑選</div>
-                    <ul>
-                        <li>蘋果身型</li>
-                        <li>梨形身型</li>
-                        <li>倒三角身型</li>
-                    </ul>
-                </div>
+                
                 <div class="col c6">
                     <div>常見問題</div>
                     <ul class="question">
@@ -447,42 +425,27 @@
         // })
 
 
-        // $(function(){
-        //     let clicked = false;
-        //     // let btnSelect = $(".btn-select")
-        //     if ($('.btn-select').click(function(){
-        //         clicked =true;
+        $(function(){
+            // let clicked = false;
+            let btnSelect = $(".btn-select")
 
-        //     })else{
+            let filter =$(".filter")   //篩選器
+            let wrapperGridMain = $('.wrapper-grid-main')  //外面大框
+            let productCards = $(".product-cards")   //卡片
+            
+            btnSelect.on('click',function(){
+                $(filter).toggleClass('-open')
+                $(wrapperGridMain).toggleClass('-open')
+                $(productCards).toggleClass('-open')
+                console.log(btnSelect)
+            })
+            
 
-        //     })
-        // })
+        })
 
-        // var hasBeenClicked = false;
-        // jQuery('#id').click(function () {
-        // hasBeenClicked = true;
-        // });
 
-        // if (hasBeenClicked) {
-        // // The link has been clicked.
-        // } else {
-        // // The link has not been clicked.
-        // }
-
-        // $("button.btn-filter").on("click", function(){
-        //     $("div.filter").toggleClass("-on");
-        //     $("div.wrapper-grid-main").toggleClass("-on");
-        //     $("div.wrapper-grid-main-items").toggleClass("-on");
-        //     $("button.btn-filter").toggleClass("-on");
-        //     $("div.select-selected").toggleClass("-on");
-        //     $("div.buttons").toggleClass("-on");
-        //     $("div.loadmore").toggleClass("-on");
-        //     $("div.btn-filter").toggleClass("-on");
-        // });
-
-        // $("div.size").on("click", function(){
-        //     $(this).toggleClass("-on");
-        // });
+        
+        
     </script>
 
 </body>
