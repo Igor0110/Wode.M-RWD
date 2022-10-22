@@ -21,7 +21,7 @@
     gap: 25px;
     max-width: 1200px;
     justify-content: center;
-    margin: 0 10%;
+    margin: 0 5%;
   }
   .wrapper-grid-main.-open{
     grid-template-columns: 1fr 1.2fr;
@@ -34,9 +34,34 @@
     
   }
   
-  .wrapper-grid-main h3{
+  .wrapper-grid-main .asidelist{
     text-align: left;
     margin: 30px 0px;
+    font-size: 3vmin;
+  }
+  .category form{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 10 auto;
+    color: #1f1f1f;
+    border: 1px solid rgba(51, 35, 35, 0.4);
+    position: relative;
+  }
+
+  .category form input,
+  .category form button{
+    border: none;
+    background-color: transparent;
+    padding: 5px 10px;
+    /* color: #1f1f1f; */
+    position: relative;
+  }
+  .category form input:focus{
+    outline: none;
+  }
+  .category form button:focus{
+    outline: none;
   }
   .filter{
     display: none;
@@ -93,7 +118,13 @@
     width: 100%;
     height: 100%;
   }
+  .custom-select select{
+    /* display: none; */
+    background-color: transparent;
+    color: #1f1f1f;
+    border: 1px solid rgba(29, 24, 24, 0.4);
 
+  }
   .track-container{
     width: 200px;
   }
@@ -123,7 +154,21 @@
   .wrapper-grid-main-items .productimg img{
     width: 100%;
   }
-  
+  .productimg{
+    position: relative;
+  }
+  .wrapper-grid-main-items .productimg .img-change{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 300px;
+    width: 100%;
+  }
+  .productimg:hover .img-change{
+    display: inline;
+  }
   .card figure div{
     width: 100%;
     height: 100%;

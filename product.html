@@ -71,16 +71,18 @@
     <h2>選購泳衣</h2>
     <div class="wrapper-grid-main">
         <!-- 篩選 -->
-        <div class="filter">
+        <aside class="filter">
             <div class="category">
-                    <a class="newarrivals"><h3>最新上市</h3></a>
-                <a class="selling"><h3>本季熱賣款</h3></a>
+                <a class="newarrivals asidelist"><div>最新上市</div></a>
+                <a class="selling asidelist"><div>本季熱賣款</div></a>
             </div>
-            <div class="category">
-                <h3>款式挑選</h3>
-                <div>
-                    <input type="text" class="category-search" placeholder="搜尋">
-                </div>
+            <div class="category ">
+                <div class="asidelist">款式挑選</div>
+                <form>
+                    <input type="search" class="category-search" placeholder="搜尋">
+                    
+                    <button><i class="fa-solid fa-search"></i></button>
+                </form>
                 <div class="filter-body">
                     <div class="filter-item">
                         <label for="">
@@ -135,7 +137,7 @@
             </div>
             
             <div class="category"> <!--依尺寸挑選  -->
-                <h3>依尺寸挑選</h3>
+                <div class="asidelist">依尺寸挑選</div>
                 <div class="filter_body item-grid">
                     <div class="filter_item size" id="checkbox1">
                         <span>XS</span>
@@ -159,9 +161,9 @@
             </div>
 
             <div class="category">  <!--價格挑選  -->
-                <h3 class="category-title">
+                <div class="category-title asidelist">
                     價格挑選                
-                </h3>
+                </div>
                 <div class="track-container">
                     <label for="range">區間
                         <input type="range" class="range" min="$1380" max="3880" step="200" value="2280">
@@ -178,9 +180,9 @@
             </div>
 
             
-        </div>
+        </aside>
         <!-- 商品內容 容器 -->
-        <div class="content">
+        <section class="content">
             <!-- <div class="row"> -->
                 <div class="buttons">
 
@@ -206,10 +208,11 @@
                         <div class="card">
                             <a href="#" class="product-card">
                                 <div class="productimg">
-                                    <img src="./pic/product/product3-0.jpg" alt="">
+                                    <img src="./pic/product/product3-0.jpg" alt="交叉美胸上衣" >
+                                    <img src="./pic/product/product3-0-1.jpg" class="img-change" alt="交叉美胸上衣">
                                 </div>
                                 <h4>
-                                    雙 V 交叉美胸上衣
+                                    交叉美胸上衣
                                 </h4>
                                 <p class="color">
                                     &#9670 Olive 橄欖綠 
@@ -224,7 +227,8 @@
                         <div class="card">
                             <a href="#" class="product-card">
                                 <div class="productimg">
-                                    <img src="./pic/product/product4-0.jpg" alt="">
+                                    <img src="./pic/product/product4-0.jpg" alt="美臀勾勾褲">
+                                    <img src="./pic/product/product4-0-1.jpg" class="img-change" alt="美臀勾勾褲">
                                 </div>
                                 <h4>
                                     美臀勾勾褲
@@ -241,7 +245,8 @@
                         <div class="card">
                             <a href="#" class="product-card">
                                 <div class="productimg">
-                                    <img src="./pic/product/product2-0.jpg" alt="Graphite black 石墨黑 美臀勾勾褲">
+                                    <img src="./pic/product/product2-0.jpg" alt="美臀勾勾褲">
+                                    <img src="./pic/product/product2-0-1.jpg" class="img-change" alt="美臀勾勾褲">
                                 </div>
                                 <h4>
                                     美臀勾勾褲
@@ -259,6 +264,7 @@
                             <a href="#" class="product-card">
                                 <div class="productimg">
                                     <img src="./pic/product/product4-1.jpg" alt="Graphite black 石墨黑 美臀勾勾褲">
+                                    <img src="./pic/product/product4-1-1.jpg" class="img-change" alt="美臀勾勾褲">
                                 </div>
                                 <h4>
                                     美臀勾勾褲
@@ -275,10 +281,11 @@
                         <div class="card">
                             <a href="#" class="product-card">
                                 <div class="productimg">
-                                    <img src="./pic/product/product3-0.jpg" alt="">
+                                    <img src="./pic/product/product3-0.jpg" alt="交叉美胸上衣" >
+                                    <img src="./pic/product/product3-0-1.jpg" class="img-change" alt="交叉美胸上衣">
                                 </div>
                                 <h4>
-                                    雙 V 交叉美胸上衣
+                                    交叉美胸上衣
                                 </h4>
                                 <p class="color">
                                     &#9670 Olive 橄欖綠 
@@ -293,7 +300,8 @@
                         <div class="card">
                             <a href="#" class="product-card">
                                 <div class="productimg">
-                                    <img src="./pic/product/product4-0.jpg" alt="">
+                                    <img src="./pic/product/product4-0.jpg" alt="美臀勾勾褲">
+                                    <img src="./pic/product/product4-0-1.jpg" class="img-change" alt="美臀勾勾褲">
                                 </div>
                                 <h4>
                                     美臀勾勾褲
@@ -310,7 +318,8 @@
                         <div class="card">
                             <a href="#" class="product-card">
                                 <div class="productimg">
-                                    <img src="./pic/product/product2-0.jpg" alt="Graphite black 石墨黑 美臀勾勾褲">
+                                    <img src="./pic/product/product2-0.jpg" alt="美臀勾勾褲">
+                                    <img src="./pic/product/product2-0-1.jpg" class="img-change" alt="美臀勾勾褲">
                                 </div>
                                 <h4>
                                     美臀勾勾褲
@@ -328,6 +337,7 @@
                             <a href="#" class="product-card">
                                 <div class="productimg">
                                     <img src="./pic/product/product4-1.jpg" alt="Graphite black 石墨黑 美臀勾勾褲">
+                                    <img src="./pic/product/product4-1-1.jpg" class="img-change" alt="美臀勾勾褲">
                                 </div>
                                 <h4>
                                     美臀勾勾褲
@@ -340,7 +350,7 @@
                                 </p>
                                 <p class="price">NT$1,380</p>
                             </a>
-                        </div>    
+                        </div>
 
                         
                     </div>
@@ -355,7 +365,7 @@
                 </div>
             <!-- </div> -->
             
-        </div>
+        </section>
     </div>
 
      <!-- =====footer -->
