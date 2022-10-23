@@ -1,0 +1,184 @@
+
+    /* 挑選指南-活動穿搭 --潛水穿搭 */
+    .recommend-main{
+        margin-top: 70px;
+    }
+    .recommend-main .container{
+        margin: auto;
+        background-color: aquamarine;
+    }
+    .recommend-main .row{
+        /* margin: 0px 5%; */
+        width: 100%;
+        /* background-color: #e1a766 */
+        background-color: palevioletred;
+        margin: auto;
+    }
+
+    .recommend-main .row button{
+        width: 100% ;
+        height: 200px;
+        border: none;
+        position: relative;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .recommend-main .row button img{
+        aspect-ratio: 4 / 3;
+        max-width: 300px;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .recommend-main .row button h4{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        color: #f1f1f1;
+        text-align: center;
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        text-shadow: 5px 2px 3px #1f1f1f;
+
+    }
+    /* ====================泳衣穿搭內容== */
+    .recommend-details a{
+        display: block;
+        background-color: transparent;
+        text-decoration: none; 
+        width: 100%;
+        height: 100%;
+
+    }
+    .recommend-details .sample{
+        cursor: pointer;
+        background-image: url(./pic/guide/guide-share1.png);
+        background-size: cover;
+        width: 300px;
+        height: 400px;
+        margin: 0 auto;
+
+    } 
+
+
+    /* ============身形挑選= */
+    .select-main .container{
+        margin: auto;
+        background-color: aquamarine;
+    }
+    .select-main .row{
+        /* margin: 0px 5%; */
+        width: 100%;
+        /* background-color: #e1a766 */
+        background-color: palevioletred;
+        margin: auto;
+    }
+
+    .select-main .select-main .row button{
+        width: 100% ;
+        height: 200px;
+        border: none;
+        position: relative;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+
+    .select-main .row button h4{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        color: #f1f1f1;
+        /* text-align: ; */
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        text-shadow: 5px 2px 3px #1f1f1f;
+    }
+    /* .recommend-main .row button h4 */
+/* ===== */
+    
+    @media screen and (min-width: 768px) {
+        .recommend-main .row button img{
+            width: 100%;
+        }
+        .recommend-main .select-main .row button{
+            min-width: 220px;
+            /* aspect-ratio: 3/4; */
+            height: 100%;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .recommend-main .row button img{
+            width: 100%;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .recommend-main .row{
+            margin: 0px auto  ;
+        }
+    }
+
+    /* ================= */
+    #sliderBoard{ /* div */
+        width: 300px;
+        overflow: hidden;
+        /* border: 5px dashed #ccc; */
+        margin: 0px auto;
+    }
+    
+    #sliderBoard ul{ /* ul */
+        width: 1500px;
+        /* 需要包含所有LI的寬度*/
+        position: relative;
+        animation: slider 5s 3;
+        /* infinite 重複 */
+    }
+    
+    #sliderBoard li{ /* li */
+        width: 300px;
+        height: 400px;
+    
+        /* display: inline-block; */
+    
+        float: left;
+        font: bold 200px Tahoma;
+        text-align: center;
+        line-height: 400px;
+    }
+    #sliderBoard li:nth-child(1){ 
+        background: red;
+    }
+    #sliderBoard li:nth-child(2){ 
+        background: orange;
+    }
+    #sliderBoard li:nth-child(3){ 
+        background: yellow;
+    }
+    #sliderBoard li:nth-child(4){ 
+        background: green;
+    }
+    #sliderBoard li:nth-child(5){ 
+        background: blue;
+    }
+    @keyframes slider {
+        0%{left :        -0px}
+        20%{left :     -300px}
+        50%{left :     -600px}
+        70%{left :     -900px}
+        90%{left :    -1200px}
+    
+    }
+.lorem{
+    background-color: peru;
+}

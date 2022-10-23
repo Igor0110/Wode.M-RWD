@@ -5,8 +5,230 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="./css_reset.css">  
+    <script src="./js/jquery-3.6.1.js"></script>
+
+    <link rel="icon" href="./pic/favicon.ico" type="image/x-icon" />
+    <!-- 網頁標題欄title加入icon圖標 -->
+    <link rel="shortcut icon" href="./pic/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./all.css">  
+    <link rel="stylesheet" href="./grid.css">
+    <!-- 字形設定 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./guide.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- <link rel="stylesheet" href="./pic/favicon.ico"> -->
+    <script src="https://kit.fontawesome.com/aef7372e6a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <input type="checkbox" name="" id="menu-switch">
+    <header class="header">
+        <!-- logo -->
+        <h1 class="logo">
+            <div class="logoiton">
+                <a  href="index.html">
+                    <img src="./pic/wode.png" alt="Wode.M">
+                </a>
+
+            </div>
+            
+        </h1>
+
+        <!-- 漢堡 -->
+        <label for="menu-switch" class="hb">  
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+      
+        <!-- 選單 -->
+        <nav class="main-nav">
+            <a href="./product.html">選購泳衣</a>
+            <a href="map.html">地圖探索</a>
+            <a href="guide.html">挑選指南</a>
+            <a href="about.html">關於我們</a>
+            <a href="#">
+                <img src="./pic/icon/shopping2.png" alt="購物車">
+                
+            </a>
+            <a href="#">
+                <img src="./pic/icon/preson5.png" alt="會員">
+                
+            </a>
+        </nav>
+    </header>
+
+    <div class="recommend-main">
+        <h3>穿搭指南</h3>
+        <div class="container options">
+            <div class="row">
+                <a href="#" class="col-12 col-md-6 col-xl-3">
+                    <button>
+                        <img src="./pic/guide/5353.jpg" alt="穿搭指南">
+                        <h4>潛水穿搭</h4>
+                    </button>
+                </a>
+                <a href="#" class="col-12 col-md-6 col-xl-3">
+                    <button>
+                        <img src="./pic/guide/swimming pool.avif" alt="穿搭指南">
+                        <h4>游泳穿搭</h4>
+                    </button>
+                </a>
+                <a href="#" class="col-12 col-md-6 col-xl-3">
+                    <button>
+                        <img src="./pic/guide/4.jpg" alt="穿搭指南">
+                        <h4>溫泉穿搭</h4>
+                    </button>
+                </a>
+                <a href="#" class="col-12 col-md-6 col-xl-3">
+                    <button>
+                        <img src="./pic/guide/surf2.jpg" alt="穿搭指南">
+                        <h4>衝浪穿搭</h4>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="recommend-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12  col-xl-4">
+                        <p>介紹泳衣穿搭</ㄣ>
+                        <p>誘惑如此沒什麼，接收所在地每日房東醫學充分如果你委員會技能一定會，隱藏豪華合同你們表達填寫到底想想如果第三你可以而來適應幾乎，百姓出發表示，進去有時候男孩千萬很多人上傳我愛被人，建設只好聰明主演簡直你是有一種尷尬中學眼神死了，報告哈哈考生，很有投票，比例。
+                        </p>
+                        
+                    </div>
+                    <div class="sample col-12 col-md-6 col-xl-4">
+                        <a href="../pic/guide/4.jpg" >
+                            <h4>溫泉穿搭</h4>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div id="sliderBoard">
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            
+        </div>
+
+
+        
+
+
+    </div>
+    <div class="select-main">
+        <h3>身型挑選</h3>
+        <div class="container">
+            <div class="row">
+                <a href="#" class="col-12 col-md-4 col-xl-4">
+                    <button>
+                        <img src="./pic/guide/5353.jpg" alt="穿搭指南">
+                        <h4>潛水穿搭</h4>
+                    </button>
+                </a>
+                <a href="#" class="col-12 col-md-4 col-xl-4">
+                    <button>
+                        <img src="./pic/guide/swimming pool.avif" alt="穿搭指南">
+                        <h4>游泳穿搭</h4>
+                    </button>
+                </a>
+                <a href="#" class="col-12 col-md-4 col-xl-4">
+                    <button>
+                        <img src="./pic/guide/4.jpg" alt="穿搭指南">
+                        <h4>溫泉穿搭</h4>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="lorem col col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aliquam non dolorum fugiat adipisci deserunt suscipit officia hic. Fugiat ut expedita porro! Laborum error tempora laboriosam dignissimos delectus totam! Eveniet.</div>
+        </div>
+    </div>
+
+    <!-- <div class="main">
+        <div class="banner-product">
+            <div class="banner-product-apparel">
+                <a href="./pic/guide/228.jpg" style="text-decoration:none;">
+                    <h1>SHOP<br>APPAREL</h1>
+                </a>
+            </div>
+            <div class="banner-product-camping">
+                <a href="./pic/guide/5353.jpg" style="text-decoration:none;">
+                    <h1>SHOP<br>CAMPING</h1>
+                </a>
+            </div>
+        </div>
+
+    </div> -->
+    <!-- == -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row row-cols-1">
+                <div class="col c1 introduce">Wode.M 台灣設計研發專屬女孩的水上運動服飾</div>
+                <div class="col c2 about">
+                    <ul>
+                        <li>關於我們</li>
+                        <li>會員中心</li>   
+                        <li>購物車</li>
+                        <li>重要公告</li>
+                        <li>隱私權政策</li>
+                    </ul>
+                </div>
+    
+                <div class="col c6">
+                    <div>常見問題</div>
+                    <ul class="question">
+                        <li>挑選指南</li>
+                        <li>如何訂購</li>
+                        <li>追蹤訂單</li>
+                        <li>物流資訊</li>
+                        <li>退貨退款</li>
+                    </ul>
+                </div>
+                <div class="col c7">
+                    <div class="middle">
+                        <a class="btn" href="">
+                            <i class="fa fa-facebook-f"></i>
+                        </a>
+                        <a class="btn" href="">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a class="btn" href="">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a class="btn" href="">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col c8">
+                    <p>本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。</p>
+                    <p>若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。 COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.</p>
+                    <p>參考資料https://www.timu-aqua.com/</p>
+                </div>
+    
+            </div>
+        </div>
+    </footer>  
     
 </body>
 </html>
