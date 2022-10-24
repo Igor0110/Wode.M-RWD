@@ -188,7 +188,7 @@ h2{
 
 
 
-/
+
 /* --------------挑選指南-活動穿搭----潛水穿搭-----↑--- */
 
 /* ---------------------連身熱賣款↓----------------- */
@@ -198,37 +198,98 @@ h2{
 
 }
 .home-onepeice{
-  width: 100vw;
-}
-.scroll-wrap{
-  height: 74vh;
-  width: 100vw;
-}
-.scroll{
-	height: 74vh;
-  width: 100vw;
-  margin: auto;
-	background-repeat: no-repeat;
-	background-attachment: local;
-	background-image: url(./pic/index/scroll4.jpg);
-	vertical-align: baseline;
-	background-position: center center;
-	background-size: 100% ;
-	position: relative;
-  box-shadow: 10px 10px 40px rgb(56, 50, 50) inset;
-
+  margin-top: 30px;
 
 }
-.scroll p{
+
+.home-onepeice img{
+width: 100%;
+height: auto;
+}
+.banner-onepice1{
+  display: none;
+}
+.banner-onepice2{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 10px 10px 30px rgb(56, 50, 50) inset;
+}
+.banner-onepice2 .text{
+  position: absolute;
+	text-align: center;
+	top: 6%;
+	left: 35%;
+	color: #fff;
+	font-size: 2vmin;
+	transform: translateX(-20%);
+  width: fit-content;
+  height: fit-content;
+}
+@media screen and (min-width: 411px) {
+  .banner-onepice2{
+    display: none;
+  }
+
+  .banner-onepice1{
+    display: block;
+    box-shadow: 10px 10px 30px rgb(56, 50, 50) inset;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+.banner-onepice1 .text{
+  position: absolute;
 	text-align: center;
 	top: 4%;
 	left: 10%;
 	color: #fff;
-	font-size: 19px;
-	position: absolute;
+	font-size: 3vmin;
 	transform: translateX(-20%);
+  width: fit-content;
+  height: fit-content;
 }
 
+
+
+/* ---影片 */
+.onepice-main{
+  margin: 40px auto;
+}
+.onepice-main .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+  line-height: 1.5;
+  padding: 20px;
+}
+.onepice-main .text>p:first-child{
+  font-size: 4vmin;
+  color: #eec6ba;
+  margin: 25px auto;
+}
+.onepice-main .text div{
+  margin-left: 30%;
+  line-height: 1.4;
+}
+.video{
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  vertical-align: middle;
+}
+.video iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0 none;
+}
 
 
 
