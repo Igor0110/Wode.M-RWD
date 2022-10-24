@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* a img{
+    object-fit: cover;
+    object-position: center center;
+} */
+.select-details a{
+    text-decoration: none;
+    cursor: pointer;
+    height: 150px;
+}
+
+/* -----------提供服務----------- */
+
+
+.select-details_h4{
+    margin-top: 120px;
+}
+
+
+/* --動畫&hover-- */
+.select-details a{
+    transition: all 1s;
+}
+
+.select-details img{
+    transition: all 1s;
+}
+
+.select-details a:nth-child(n):hover{
+    transform: scale(1.1);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.select-details a:nth-child(n) img:hover{
+    border-radius: 3px;
+}
+
+.select-details_h4{
+    margin: 30px auto 15px;
+}
+
+.select-details{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+    .row .select-details{
+        position: relative;
+        width: 1190px;
+        margin: 60px auto 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: palegreen;
+    }
+    .select-details a{
+        display: block;
+        width: 100%;
+    }
+    
+    .select-details img{
+        height: 150px;  
+        /* height: 50vw; */
+        object-fit:cover;
+    }
+
+
+
+    .select-details h5{
+        padding: 10px;
+        border-radius: 3px;
+        margin: 15% 35% auto 35%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .select-details > div{
+        /* display: none; */
+    }
+    .select-details a:nth-child(1){
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
+    
+    .select-details a:nth-child(2){
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    .select-details a:nth-child(3){
+        grid-column: 3 / 5;
+        grid-row: 1 / 2;
+    }
+    
+    .select-details a:nth-child(4){
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+    }
+    
+
+    
+    /* .select-details div{
+        transform: rotate(180deg);
+    } */
+    
+    .select-details h5{
+        position: absolute;
+        padding: 20px;
+        background-color: rgb(255, 255, 255, .7);
+        border-radius: 5px;
+        margin: 15px;
+    }
+    
+}
+@media screen and (min-width: 1200px) {}
+
+    </style>
+</head>
+<body>
+    <h4 class="select-details_h4">提供服務</h4>
+    <!-- <h1 class="index_serve_h1">提供服務</h1>提供服務 -->
+    <div class="container select-details">
+        <div class="row">
+            <div class="select-details">
+                <a href="product.html">
+                    <h5>1花藝商品</h5>
+                    <img src="./pic/guide/select/select---1-1.jpg" alt="">
+                </a>
+                <div class="details-conent">
+                    
+                    <img src="./pic/guide/select/select--grid-.jpg" alt="">
+                </div>
+                <a href="order.html">
+                    <h5>2訂做服務</h5>
+                    <img src="./pic/guide/select/select-2.jpg" alt="">
+                </a>
+                <a href="identify.html">
+                    <h5>3選花指南</h5>
+                    <img src="./pic/guide/select/select-3.jpg" alt="">
+                </a>
+                <a href="news.html">
+                    <h5>4搭配建議</h5>
+                    <img src="./pic/guide/select/select-4.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
