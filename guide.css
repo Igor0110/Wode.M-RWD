@@ -198,6 +198,114 @@
     }
 
 
+    /* ====穿搭體驗分享==== */
+.course-sorts .img-change{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /* height: 100%;
+    width: 100%; */
+}
+/* .TOP1-img:hover .img-change{
+    display: inline;
+} */
+.TOP1-img{
+    max-width: 250px;
+}
+.col-4.share-pic{
+    width: 100px;
+
+}
+.shareTop{
+    display: flex;
+    flex-direction: column;
+}
+.shareTop img{
+    width: 100%;
+
+}
+.course-sorts p{
+    font-size: 2vmin;
+    font-weight: 400;
+    text-align: center;
+    color: #8C2121;
+}
+.course-sorts p span{
+    background-color: #ce9656;
+    color: #f1f1f1;
+}
+.share-content{
+    margin: auto 0;
+    margin-left: 20px;
+}
+.share-pic img{
+    width: 100%;
+    height: 100%;
+
+}
+.card-group{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    display: flex;
+}
+/* .col-8.text{
+    display: grid;
+    grid-template-rows: 1fr 3fr 3fr;
+    justify-content: center;
+
+} */
+
+@media screen and (min-width: 768px) {
+    .arrival-3,.arrival-4{
+        display: none;
+    }
+    .col-4.share-pic{
+        width: 150px;
+    }
+    .share-content{
+        margin-left: 10px;
+    }
+
+    .course-sorts .TOP1-img{
+        max-width: 200px;
+    } 
+
+}
+@media screen and (min-width: 1024px) {
+    .arrival-3{
+        display: block;
+    }
+
+    .share-pic{
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        margin: auto 0;
+    }
+
+
+}
+    
+@media screen and (min-width: 1200px) {}
+
+.more-course{
+
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+.more{
+    background-color: #4e4e4e;
+    color: #f1f1f1;
+    width: fit-content;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 10px
+}
+/* ====穿搭體驗分享==== */
+
+
 
     /* ============身形挑選= */
     .select-main{
@@ -228,7 +336,8 @@
         /* margin: 0px 5%; */
         width: 100%;
         /* background-color: #e1a766 */
-        /* background-color: palevioletred; */
+        /* backgroun
+        d-color: palevioletred; */
         margin: 0 auto;
     }
 

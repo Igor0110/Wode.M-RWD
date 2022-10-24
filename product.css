@@ -157,6 +157,8 @@
   .productimg{
     position: relative;
   }
+
+  /* ===hover換圖片 */
   .wrapper-grid-main-items .productimg .img-change{
     display: none;
     position: absolute;
@@ -168,6 +170,10 @@
   }
   .productimg:hover .img-change{
     display: inline;
+  }
+  .TOP1-img img{
+    width: 100%;
+    height: 100%;
   }
   .card figure div{
     width: 100%;
@@ -242,7 +248,9 @@
     .wrapper-grid-main{
       grid-template-columns: 1fr 3fr;
     }
-
+    .course-sorts .TOP1-img{
+      width: 200px;
+    }
 
 
   
