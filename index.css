@@ -122,20 +122,29 @@ h2{
 
 
 /* 穿搭指南 /活動穿搭/ */
+
+.recommend-outline{
+  background-color: #eec6ba;
+
+}
+.recommend-index{
+  padding-bottom: 30px;
+}
 .recommend-index>p{
   color: #642424;
   font-weight: 400;
   text-align: center;
   font-size: 4vmin;
   padding: 10px;
+
 }
 .recommend-wrap {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  height: 40vh;
-  background-color: #eec6ba;
+  height: 60vh;
+
 }
 
 .item{     /* .recommend-wrap a */
@@ -203,29 +212,32 @@ h2{
 }
 
 .home-onepeice img{
-width: 100%;
-height: auto;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  box-shadow: 10px 10px 30px rgb(56, 50, 50) inset;
 }
 .banner-onepice1{
   display: none;
 }
 .banner-onepice2{
+  display: block;
   position: relative;
   width: 100%;
   height: auto;
   margin: 0 auto;
-  box-shadow: 10px 10px 30px rgb(56, 50, 50) inset;
+
 }
 .banner-onepice2 .text{
   position: absolute;
-	text-align: center;
-	top: 6%;
-	left: 35%;
-	color: #fff;
-	font-size: 2vmin;
-	transform: translateX(-20%);
   width: fit-content;
   height: fit-content;
+  color: #fff;
+	top: 6%;
+	left: 35%;
+	font-size: 2vmin;
+	transform: translateX(-20%);
+
 }
 @media screen and (min-width: 411px) {
   .banner-onepice2{
@@ -266,6 +278,9 @@ height: auto;
   color: #f1f1f1;
   line-height: 1.5;
   padding: 20px;
+}
+.onepice-main .text p{
+  line-height: 1.6;
 }
 .onepice-main .text>p:first-child{
   font-size: 4vmin;

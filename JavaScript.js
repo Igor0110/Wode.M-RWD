@@ -29,4 +29,26 @@ window.addEventListener("load",function(){
     },
   });
 
+
+
+  // product
+  
+  $(function(){
+    // let clicked = false;
+    let btnSelect = $(".btn-select")
+
+    let filter =$(".filter")   //篩選器
+    let wrapperGridMain = $('.wrapper-grid-main')  //外面大框
+    let productCards = $(".product-cards")   //卡片
+    
+    btnSelect.on('click',function(){
+        $(filter).toggleClass('-open')
+        $(wrapperGridMain).toggleClass('-open')
+        $(productCards).toggleClass('-open')
+        console.log(btnSelect)
+    })
+    
+
+})
+
 })
