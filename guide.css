@@ -204,7 +204,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 2;
     /* height: 100%;
     width: 100%; */
 }
@@ -221,10 +221,26 @@
 .shareTop{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .shareTop img{
     width: 100%;
 
+}
+.TOP1-product{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: #8C2121;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    text-shadow: 5px 2px 3px #f1f1f1;
+    
 }
 .course-sorts p{
     font-size: 2vmin;
@@ -249,12 +265,7 @@
     border-bottom: 1px solid rgba(0,0,0,.1);
     display: flex;
 }
-/* .col-8.text{
-    display: grid;
-    grid-template-rows: 1fr 3fr 3fr;
-    justify-content: center;
 
-} */
 
 @media screen and (min-width: 768px) {
     .arrival-3,.arrival-4{
@@ -269,6 +280,7 @@
 
     .course-sorts .TOP1-img{
         max-width: 200px;
+
     } 
 
 }
@@ -306,8 +318,7 @@
 /* ====穿搭體驗分享==== */
 
 
-
-    /* ============身形挑選= */
+/* ============身形挑選= */
     .select-main{
         margin: auto;
     }

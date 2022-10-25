@@ -1,0 +1,115 @@
+.map{
+    margin-top: 73px;
+}
+.map .mapbanner{
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+  
+}
+.map .img:nth-child(1){
+    object-fit: cover;
+    object-position: center center;
+}
+.map .img:nth-child(2){
+    object-fit: cover;
+    object-position: center center;
+   
+}
+h2{
+    margin: 100px 0px;
+}
+.map .img img{
+    width: 100%;
+    height: 100%;
+}
+.map-body .maptitle{
+    display: flex;
+    justify-content: center;
+    margin: 30px 10px;
+}
+.map .maptitle a{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    text-align: center;
+    margin: 20px 40px;
+    background-color: #8C2121;
+
+}
+
+.map .maptitle a h3{
+    color: #f1f1f1;
+}
+.map .maptitle a:hover{
+    background-color: #F4A45E;
+}
+.map .maptitle a h3:hover{
+    color: #8C2121;
+}
+.map .map-body h4{
+    padding-top: 10px;
+}
+.mapgroup{
+    margin: 100px 0px;
+}
+.map .mapgroup{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+
+
+.map .mapgroup img{
+    width: 100%;
+    height: 100%;
+}
+.map .mapgroup .img{
+    position: relative;
+}
+.map .mapgroup .img div{
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    background-color: #f1f1f1;
+    color: #642424;
+    font-size: 20px;
+    bottom: 0;
+    text-align: center;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.mapsection{
+    max-width: 1200px;
+    height: 500px;
+    display: flex;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.mapgoogle{
+    width: 50%;
+
+}
+
+.mapgoogle iframe{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.mapsection .maptext{
+    margin: 100px 200px 100px 200px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 18px;
+
+    
+}
+.mapsection .maptext p,.mapsection .maptext h5{
+    text-align: left;
+    
+}
+
