@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wode.M 商品頁</title>
+    <script src="./js/jquery-3.6.1.js"></script>
+    <link rel="stylesheet" href="./css_reset.css">  
+
+    <link rel="icon" href="./pic/favicon.ico" type="image/x-icon" />
+    <!-- 網頁標題欄title加入icon圖標 -->
+    <link rel="shortcut icon" href="./pic/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./all.css"> 
+
+    <link rel="stylesheet" href="./grid.css">
+
+    <link rel="stylesheet" href="./product-page.css">
+    <!-- 字形設定 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/aef7372e6a.js" crossorigin="anonymous"></script>
+    <script src="./JavaScript.js"></script>
+</head>
+<body>
+    <input type="checkbox" name="" id="menu-switch">
+    <header class="header">
+        <!-- logo -->
+        <h1 class="logo">
+            <div class="logoiton">
+                <a  href="index.html">
+                    <img src="./pic/wode.png" alt="Wode.M">
+                </a>
+
+            </div>
+            
+        </h1>
+
+        <!-- 漢堡 -->
+        <label for="menu-switch" class="hb">  
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+      
+        <!-- 選單 -->
+        <nav class="main-nav">
+            <a href="./product.html">選購泳衣</a>
+            <a href="map.html">門市介紹</a>
+            <a href="guide.html">挑選指南</a>
+            <a href="about.html">關於我們</a>
+            <a href="#">
+                <img src="./pic/icon/shopping2.png" alt="購物車">
+                
+            </a>
+            <a href="#">
+                <img src="./pic/icon/preson5.png" alt="會員">
+                
+            </a>
+        </nav>
+    </header>
+
+
+
+    <div class="product-page-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="item img-group">
+                        <div class="main-img">
+                            <img src="https://picsum.photos/500/500/?random=11">
+                        </div>
+                        <div class="small-img-wrap">
+                            <div class="small-img">
+                                <img src="https://picsum.photos/100/100/?random=10">
+                            </div>
+                            <div class="small-img">
+                                <img src="https://picsum.photos/100/100/?random=10">
+                            </div>
+                            <div class="small-img">
+                                <img src="https://picsum.photos/100/100/?random=10">
+                            </div>
+                            <div class="small-img">
+                                <img src="https://picsum.photos/100/100/?random=10">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+
+                    <div class="item">
+                        <h2 class="product-title"> 美臀勾勾褲</h2>
+
+
+                        <p class="price">$1,380</p>
+
+                        <h3>尺寸：</h3>
+                        <div class="size-wrap">
+                            <label for="radio">S</label>
+                            <label for="radio">M</label>
+                            <label for="radio">L</label>
+                            <label for="radio">XL</label>
+                        </div>
+                        <h3>數量：</h3>
+                        
+                        <div class="qu-button-group">
+                            <div class="minus qu-button">-</div>
+                            <div>1</div>
+                            <div class="plus qu-button">+</div>
+                            
+                        </div>
+                        <div class="icon-wrap">
+                            <div class="icon_box">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                        </div>
+                        <div>
+                            體驗分享
+
+                        </div>
+                        <div class="btn_box">
+
+                            <div class="heart_box">
+                                <a class="btn-love" id="regular_heart" onclick="changeToSolidHeart()">
+                                    <i class="fa-regular fa-heart" >加入追蹤</i>
+                                </a>
+                                <!-- 加到我的最愛 -->
+                                <a class="btn-heart" onclick="changeToRegHeartColor()" id="solid_heart-heart">
+                                    <i class="fa-solid fa-heart">取消追蹤</i>
+                                </a>
+                                <!-- 加到我的最愛 -->
+                            </div>
+                            <div class="buy-group">
+                                <a href="#" class="cart-btn">
+                                    加入購物車
+                                </a>
+                                <a href="#" class="buy-btn">立即購買</a>
+                            </div>
+                            <div>全店，消費滿NT$4,000元，享台灣國內免運。</div>
+                        </div>
+                        <h3>About This Item</h3>
+                        <div>
+                            <p>- 羅紋系列 2022 全新色</p>
+                            <p>- 質感配件再升級！全台限量 100 套「售完即絕版  </p>
+                            <p>- 厚磅挺感的質感紋路，最方便調整的勾勾褲設計</p>
+                        </div>
+
+
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row row-cols-1">
+                <div class="footer-col c1 introduce">Wode.M 台灣設計研發專屬女孩的水上運動服飾</div>
+                <div class="footer-col c2 about">
+                    <ul>
+                        <li>關於我們</li>
+                        <li>會員中心</li>   
+                        <li>購物車</li>
+                        <li>重要公告</li>
+                        <li>隱私權政策</li>
+                    </ul>
+                </div>
+    
+                <div class="footer-col c6">
+                    <div>常見問題</div>
+                    <ul class="question">
+                        <li>挑選指南</li>
+                        <li>如何訂購</li>
+                        <li>追蹤訂單</li>
+                        <li>物流資訊</li>
+                        <li>退貨退款</li>
+                    </ul>
+                </div>
+                <div class="footer-col c7">
+                    <div class="middle">
+                        <a class="btn" href="">
+                            <i class="fa fa-facebook-f"></i>
+                        </a>
+                        <a class="btn" href="">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a class="btn" href="">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a class="btn" href="">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col c8">
+                    <p>本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。</p>
+                    <p>若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。 COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.</p>
+                    <p>參考資料https://www.timu-aqua.com/</p>
+                </div>
+    
+            </div>
+        </div>
+    </footer>
+    <script>
+        // --宣告html
+// let myclass = `<li class='productcontent'><div class='productname'><img src={img}></div><div class='productname proprice'>{price}</div><div id='math' class='productname'><div class='minus'>-</div><div class='number'>1</div><div class='plus'>+</div></div><div class='productname producttotal'>{total}</div><div class='productname del' data-del={del}>x</div></li>`;
+// for(let j = 0;j<plus.length;j++){
+//     minus[j].addEventListener("click",()=>{
+//         if((number[j].innerText)>1){
+//             number[j].innerText = parseInt(number[j].innerText) + -1;
+//             total = prodprice[j].innerText * number[j].innerText;
+//             // console.log(prodprice[i].innerText * number[i].innerText)
+//             prodtotal[j].innerText = total;
+//             sure();
+//         }
+//     });
+// }
+
+
+    </script>
+</body>
+</html>
