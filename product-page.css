@@ -17,8 +17,10 @@
     align-items: center;    
     gap: 5px;
 }
-h2,.product-title{
-    /* margin: 5px auto; */
+
+.price{
+    margin: 10px 0px ;
+    color: coral;
 }
 
 .star-icon-box i{
@@ -54,6 +56,14 @@ h2,.product-title{
     
 
 }
+.product-page-main .share{
+    display: flex;
+
+}
+.product-page-main .share a{
+    background-color: #ffc500;
+    text-decoration: none;
+}
 
 .qu-button-group .qu-button{
     background-color: coral;
@@ -70,6 +80,7 @@ h2,.product-title{
 .buy-group{
     display: flex;
     justify-content: space-around;
+    
 
 }
 .buy-group a{
